@@ -227,7 +227,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url("/img/fundo1.jpg");
+  background-image: url("fundo1.jpg");
 }
 
 .container {
