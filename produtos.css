@@ -121,7 +121,7 @@ html{
 }
 
 body{
-   background-image: url("/img/Fundo5.png");
+   background-image: url("Fundo5.png");
 }
 
 .container{
