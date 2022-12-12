@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+/*inicio rodape*/
+
+:root{
+    --white: #ffffff;
+    --red : #971a1a;
+    --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+*{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;   
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+
+.header{
+    top: 0;right: 0;left: 0;
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 1.4rem 7%;
+    z-index: 999;
+}
+.header .logoContent{
+    display: flex;
+    align-items: center;
+}
+.header .logoContent .logo img{
+    position: relative;
+    max-width: 130px;
+}
+
+
+.header .logoContent .logoName {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.header .navbar a{
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: var(--white);
+    font-weight: bold;
+}
+.header .navbar a:hover{
+    border-bottom: .1rem solid var(--white);
+    padding-bottom: .4rem;
+}
+
+section{
+    padding: 2rem 7%;
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    .header{
+        padding: 1.3rem 3rem;
+    }
+    .home .homeContent{
+        margin-left: 0;
+        width: 80%;
+    }
+}
+
+@media (max-width:768px) {
+    #menu-bar{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 25rem;
+        background-color: var(--red);
+        height: 80vh;
+    }
+    .header .navbar.active{
+        right: 0;
+    }
+    .header .navbar a{
+        display: block;
+        font-size: 2rem;
+        color: black;
+        margin: 1.5rem;
+    }
+
+}
+
+@media (max-width:600px){
+    html{
+        font-size: 50%;
+    }
+}
+
+/*fim do rodape*/
+/*incio da linha do tempo*/
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    height: 100%;
+    margin: 0px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: larger;
+    
+}
+.timeline
+{
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0 ;
+    width: 1000px;
+    box-sizing: border-box;
+    
+   
+
+}
+.timeline:before
+{
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #424242;
+}
+.timeline ul{
+    margin: 0;
+    padding: 0;
+
+}
+.timeline ul li
+{
+    list-style: none;
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+.timeline ul li:nth-child(odd)
+{
+    float: left;
+    text-align: right;
+    clear: both;
+}
+.timeline ul li:nth-child(even)
+{
+    float: right;
+    text-align: left;
+    clear: both;
+}
+.sobre
+{
+    padding-bottom: 20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+    content: '';
+    position: absolute;
+    top: 16px;
+    right: -6px;
+    width: 10px;
+    height: 10px;
+    background: #971a1a;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #af5656;
+}
+.timeline ul li:nth-child(even):before
+{
+    content: '';
+    position: absolute;
+    top: 16px;
+    left: -4px;
+    width: 10px;
+    height: 10px;
+    background: #971a1a;
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px #af5656;
+}
+.timeline ul li h3
+{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: #971a1a;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+.timeline ul li p
+{
+    margin: 10px 0 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    
+}
+.timeline ul li .time h4
+{
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+}
+.timeline ul li:nth-child(odd) .time
+{
+    position: absolute;
+    top: 2px;
+    right: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #971a1a;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px #af5656;
+    
+    
+}
+.timeline ul li:nth-child(even) .time
+{
+    position: absolute;
+    top: 2px;
+    left: -165px;
+    margin: 0;
+    padding: 8px 16px;
+    background: #971a1a;
+    border-radius: 18px;
+    box-shadow: 0 0 0 3px #af5656;
+    
+}
+.timeline .sobre:hover{
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+        transition: 0.3s;
+        border-radius: 10px;
+}
+.sobre-text{
+    font-family: 'Quicksand', sans-serif;
+}
+.s-titulo{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 80px;  
+}
+.s-img{
+  -webkit-transform: scale(0.80);
+        -ms-transform: scale(0.80);
+        transform: scale(0.80);
+       
+}
+  .card-title{
+      color: #971a1a;
+  }
+  .card-link{
+    color: #971a1a;
+}
+  .s-card{
+   position: relative;
+    background-color: #fff;
+    margin: 20px;
+    overflow: hidden;
+    transition: 0.5s;
+    border-radius: 20px;
+  }
+  .s-card:hover{
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    margin-top: -10px;
+    box-shadow: 2px 20px 25px #971a1a;
+  }
+ 
+  
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 20px;
+    margin: 30px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    background-color: #f9fdff;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+  
+  .card p {
+    color: #000000;
+    font-size: 16px;
+  }
+  
+  .image {
+    float: right;
+    max-width: 120px;
+    max-height: 120px;
+  }
+   .card-img-top{
+    border: none;
+  }
+
+h1{
+    font-family: 'Nunito', sans-serif; 
+    font-size: 3.5rem;
+   color:#444;
+   margin-bottom: 3rem;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.sobrenos{
+    
+    background-image: url(/img/sobrecerto.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    color: #fff;
+    padding: 200px 15px;
+    opacity: 0.9;
+}
+.titulosobre{
+    font-size: larger;
+}
+.s-titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 45px;  
+}
