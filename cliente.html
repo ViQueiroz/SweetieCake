@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/cliente.css">
+  <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="img/logo-branco.png" alt=""></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="especiaria.html">Especiarias</a>
+            <a href="cliente.html">Cliente</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+
+        <div class="icon"></div>
+    </header>
+
+
+
+  <div class="container">
+    <div class="buttonsForm">
+      <div class="btnColor"></div>
+      <button id="btnSignin">Login</button>
+      <button id="btnSignup">Cadastro</button>
+    </div>
+
+    <form id="signin">
+      <input type="text" placeholder="Email" required />
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Senha" required />
+      <i class="fas fa-lock iPassword"></i>
+      <div class="divCheck">
+        <input type="checkbox" />
+        <span>Lembrar senha</span>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+
+    <form id="signup">
+      <input type="text" placeholder="Email" required />
+      <i class="fas fa-envelope iEmail"></i>
+      <input type="password" placeholder="Senha" required />
+      <i class="fas fa-lock iPassword"></i>
+      <input type="password" placeholder="Confirmar senha" required />
+      <i class="fas fa-lock iPassword2"></i>
+      <div class="divCheck">
+        <input type="checkbox" required />
+        <span>Aceito os termos</span>
+      </div>
+      <button type="submit">Cadastro</button>
+    </form>
+  </div>
+
+  <script src="js/cliente.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <title>SweetieCake</title>
+
+    <link rel="stylesheet" href="css/compra.css">
+</head>
+<body>
+    <div class="container">
+
+    <form action="https://formsubmit.co/vitoriaqueiroz290@gmail.com" method="POST">
+    <input type="hidden" name="_next" value="http://127.0.0.1:5501/sucesso.html">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">Processando pedido</h3>
+
+                <div class="inputBox">
+                    <span>Nome:</span>
+                    <input type="text" placeholder="Digite seu nome e sobrenome">
+                </div>
+                <div class="inputBox">
+                    <span>Email :</span>
+                    <input type="email" placeholder="Digite seu email">
+                </div>
+
+                <div class="inputBox">
+                    <span>CPF :</span>
+                    <input type="cpf" placeholder="Digite seu cpf">
+                </div>
+                
+                <div class="inputBox">
+                    <label for="validationCustom04" class="form-label">Bolos Simples</label>
+        <select class="form-select" id="validationCustom04" >
+
+          <option selected disabled value=""></option>
+          <option>Bolo de Chocolate  </option>
+          <option>Bolo de Fubá Simples  </option>
+          <option>Bolo de Fubá com Goiabada  </option>
+          <option>Bolo de Limão  </option>
+          <option>Bolo de Maracujá  </option>
+          <option>Bolo Formigueiro  </option>
+
+        </select>
+                </div>
+
+                <div class="inputBox">
+                    <label for="validationCustom04" class="form-label">Bolos Recheados</label>
+        <select class="form-select" id="validationCustom04" >
+
+          <option selected disabled value=""></option>
+          <option>Bolo de Churros com Canela</option>
+          <option>Bolo de Floresta Negra</option>
+          <option>Bolo Trufado de Morango</option>
+          <option>Bolo de Chocolate/Maracujá</option>
+          <option>Bolo de Ninho Trufado</option>
+          <option>Bolo de Morango</option>
+
+        </select>
+                </div>
+
+                <div class="inputBox">
+                    <label for="validationCustom04" class="form-label">Bombons</label>
+        <select class="form-select" id="validationCustom04" >
+
+          <option selected disabled value=""></option>
+          <option>Cereja</option>
+          <option>Brigadeiro</option>
+          <option>Café e Chocolate</option>
+          <option>Maracujá</option>
+          <option>Coco</option>
+          <option>Limão</option>
+
+        </select>
+                </div>
+
+                <br>
+                <h3 class="title">Entrega do pedido</h3>
+
+                <div class="pedido-input" onselect="entregaEscolhido()">
+                    <input id="retirada" type="radio" name="entrega" value="retirada">
+                    <label for="retirada">Retirada no local</label>
+                </div>
+
+                <div class="pedido-input" onselect="entregaEscolhido()">
+                    <input id="deliver" type="radio" name="entrega" value="delivery">
+                    <label for="delivery">Delivery</label>
+                </div>
+                <br>
+
+                <h3 class="title">Endereço da entrega</h3>
+
+                <div class="inputBox">
+                    <span>CEP :</span>
+                    <input id="cep" type="text" placeholder="Digite o CEP do local" >
+                </div>
+
+                <div class="inputBox">
+                    <span>Endereço :</span>
+                    <input id="endereco" type="text" name="endereco" placeholder="Digite o endereço do local" >
+                </div>
+
+                <div class="inputBox">
+                    <span>Número :</span>
+                    <input id="numero" type="text" name="numero" placeholder="Digite o número do local " >
+                </div>
+
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">Pagamento</h3>
+
+                <div class="inputBox">
+                    <span>Cartões aceitos :</span>
+                    <img src="img/card_img.png" alt="">
+                </div>
+                <div class="inputBox">
+                    <span>Nome no cartão :</span>
+                    <input type="text" placeholder="Digite o nome detacado no cartão">
+                </div>
+                <div class="inputBox">
+                    <span>Número do cartão :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                <div class="inputBox">
+                    <span>Bairro :</span>
+                    <input id="bairro" type="text" name="bairro" placeholder="Digite o bairro do local" >
+                </div>
+
+                <div class="inputBox">
+                    <span>Cidade :</span>
+                    <input id="cidade" type="text" name="cidade" placeholder="Digite a cidade do local" >
+                </div>
+
+                <div class="inputBox">
+                    <span>Estado :</span>
+                    <input id="estado" type="text" name="estado" placeholder="Digite o Estado do local" >
+                </div>
+
+
+            </div>
+    
+        </div>
+
+        <input type="submit" value="enviar pedido" class="submit-btn">
+
+    </form>
+
+</div> 
+
+  
+ 
+</body>
+<script src="js/compra.js"></script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetieCake</title>
+
+    <link rel="stylesheet" href="css/contato.css">
+</head>
+<body class="bg-contato">
+  <!--criando formulário-->
+  <div class="container">
+    <div class="form-image">
+        <img src="img/Logo .jpg" alt="">
+    </div>
+    <div class="form">
+        <form action="https://formsubmit.co/vitoriaqueiroz290@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="http://127.0.0.1:5501/sucesso.html">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Contato</h1>
+                </div>
+                <div class="botao-voltar">
+                    <button><a href="index.html">Voltar</a></button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="firstname">Primeiro Nome</label>
+                    <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="lastname">Sobrenome</label>
+                    <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+            </div>
+
+            <div class="contato-inputs">
+                <div class="contato-title">
+                    <h6>Motivo do Contato</h6>
+                </div>
+
+                <div class="contato-group" >
+                    <div class="contato-input" onselect="contatoEscolhido()">
+                        <input id="duvida" type="radio" name="contato" value="duvida">
+                        <label for="duvida">Dúvida</label>
+                    </div>
+
+                    <div class="contato-input" onselect="contatoEscolhido()">
+                        <input id="reclamacao" type="radio" name="contato" value="reclamacao">
+                        <label for="reclamacao">Reclamação</label>
+                    </div>
+
+                    <div class="contato-input" onselect="contatoEscolhido()">
+                        <input id="elogio" type="radio" name="contato" value="elogio">
+                        <label for="elogio">Elogio</label>
+                    </div>
+
+                    <div class="contato-input" onselect="contatoEscolhido()">
+                        <input id="sugestao" type="radio" name="contato" value="sugestao">
+                        <label for="sugestao">Sugestão</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contato-inputs">
+                <div class="contato-title">
+                    <h6>Deixe aqui seu comentário</h6>
+                </div>
+
+                <div class="row">
+                    <textarea name="sobre" id="sobre" cols="30" rows="5" ></textarea>
+                </div>
+
+            
+            </div>
+
+            <div class="confirmar-button" onclick="contatoEscolhido()" >
+                <button id="btnConfirmar"><a href="#">Enviar</a></button>                    
+            </div>
+            
+
+        </form>
+    </div>
+</div>
+</body>
+
+
+</html>
