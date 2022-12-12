@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SweetieCake</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-index">
+    <header class="header">
+        <div class="logoContent">
+            <a href="#" class="logo"><img src="img/logo-branco.png" alt=""></a>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="especiaria.html">Especiarias</a>
+            <a href="cliente.html">Cliente</a>
+            <a href="contato.html">Contato</a>
+            <a href="sobre.html">Sobre</a>
+        </nav>
+
+        <div class="icon">
+            <i class="fas fa-search" id="search"></i>
+            <i class="fas fa-bars" id="menu-bar"></i>
+        </div>
+    </header>
+
+    <section>
+        <div class="circle"></div>
+       
+        <div class="content">
+                <div class="textBox">
+                    <h2>Adoce sua vida<br><span id="spanzinho">SweetieCake</span></h2>
+                    <p style="color: black;">Os melhores produtos perfeitamente selecionados para você. Venha desfrutar dos sabores da
+                        infância e se deliciar com as incríveis novidades da Sweetie. Não perca tempo, venha fazer parte
+                        da família SweetieCake que não para de crescer e aproveite dos benefícios de ser um franqueado!
+                    </p>
+                    <a href="sobre.html" class="sweetie-text">Veja mais</a>
+                </div>
+            
+            <div class="imgBox">
+                <img src="img/bolo_de_morango-removebg-preview.png" class="sweetie">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/bolo_de_red_velvet.png" onclick="imgSlider('img/bolo_de_red_velvet.png');changeCircleColor('#991e1e');changeH2Color('#991e1e')">
+            </li>
+            <li><img src="img/Chocolate(maior).png" onclick="imgSlider('img/Chocolate(maior).png');changeCircleColor('#63331a');changeH2Color('#63331a');">
+            </li>
+            <li><img src="img/bombom_de cereja.png" onclick="imgSlider('img/bombom_de cereja.png');changeCircleColor('#bf3232');changeH2Color('#bf3232');">
+            </li>
+        </ul>
+
+    </section>
+   
+</body>
+<script src="js/script.js"></script>
+
+
+
+</html>
